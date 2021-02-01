@@ -1,7 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 const Navbar = () => {
-  return <nav>navbar</nav>;
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to='/'>Home Page</Link>
+        </li>
+        <li>
+          <Link to='/about'>About Page</Link>
+        </li>
+        <li>
+          <Link to='/people'>People</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 };
 
 export default Navbar;
